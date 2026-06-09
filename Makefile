@@ -20,11 +20,11 @@ build:
 	@echo "Build complete."
 
 start: build
-	@echo "Starting Go Agent Dispatch service on port 8081..."
+	@echo "Starting Go Agent Orchestrator service on port 8001..."
 	./server
 
 dev:
-	@echo "Starting Go Agent Dispatch service with live-reload (Air)..."
+	@echo "Starting Go Agent Orchestrator service with live-reload (Air)..."
 	air
 
 test:
