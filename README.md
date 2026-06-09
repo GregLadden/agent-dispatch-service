@@ -1,6 +1,6 @@
-# Agent Dispatch Service (Go)
+# Agent Orchestrator Service (Go)
 
-This is a concurrent task dispatching and worker service built in Golang. It acts as an asynchronous job queue using Redis list brokers and streams real-time execution steps back to client nodes using Server-Sent Events (SSE).
+This is a concurrent agent orchestration and task worker service built in Golang. It acts as an asynchronous job queue using Redis list brokers and streams real-time execution steps back to client nodes using Server-Sent Events (SSE).
 
 ## 🚀 Features
 
