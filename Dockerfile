@@ -11,7 +11,7 @@ RUN go mod download
 COPY . .
 
 # Build static binary
-RUN CGO_ENABLED=0 GOOS=linux go build -o agent-dispatch-service main.go
+RUN CGO_ENABLED=0 GOOS=linux go build -o agent-orchestrator main.go
 
 # Production stage
 FROM alpine:latest
@@ -21,9 +21,9 @@ RUN apk --no-cache add ca-certificates
 WORKDIR /root/
 
 # Copy binary from builder
-COPY --from=builder /app/agent-dispatch-service .
+COPY --from=builder /app/agent-orchestrator .
 
 ENV PORT=8081
 EXPOSE 8081
 
-CMD ["./agent-dispatch-service"]
+CMD ["./agent-orchestrator"]

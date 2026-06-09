@@ -1,4 +1,4 @@
-module github.com/GregLadden/agent-dispatch-service
+module github.com/GregLadden/agent-orchestrator
 
 go 1.25.0
 
