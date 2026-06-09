@@ -23,4 +23,7 @@ WORKDIR /root/
 # Copy binary from builder
 COPY --from=builder /app/agent-orchestrator .
 
+ENV PORT=8001
+EXPOSE 8001
+
 CMD ["./agent-orchestrator"]
