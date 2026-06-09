@@ -1,0 +1,10 @@
+# Environment variables
+.env
+
+# Binary built outputs
+server
+server.exe
+
+# Reloader logs / temporary directories
+tmp/
+*.log
